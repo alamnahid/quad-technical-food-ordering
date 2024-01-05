@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer{
+  background-image: url(./assets/footer.png), linear-gradient(to top, #f99f1c, #f9a01cd0);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* bg-gradient-to-t from-[#f99f1c] to-[#f9a01cd0] */

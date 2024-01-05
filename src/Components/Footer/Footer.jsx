@@ -1,10 +1,14 @@
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaGoogle } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+
 
 const Footer = () => {
     return (
-        <div className="h-[30rem] bg-gradient-to-t from-[#f99f1c] to-[#f9a01cd0] flex">
-            
-            
-        </div>
+       <div>
+        
+       </div>
     );
 };
 
