@@ -18,14 +18,14 @@ export function NavbarDark() {
     return (
         <Navbar
             variant="gradient"
-            className="mx-auto min-w-[80vw] px-4 py-3 shadow-none bg-[#eeeff0] border-none pt-8" 
+            className="mx-auto md:min-w-[80vw] px-4 py-3 shadow-none bg-[#eeeff0] border-none pt-8" 
         >
-            <div className="flex flex-wrap items-center justify-between gap-y-4 text-black">
+            <div className="flex items-center justify-between gap-y-4 text-black">
                 <Typography
                     as="a"
                     href="#"
                     variant="h6"
-                    className="mr-4 ml-2 cursor-pointer font-extrabold py-1.5"
+                    className="mr-4 md:ml-2 cursor-pointer font-extrabold py-1.5 text-xl md:text-2xl 2xl:text-3xl"
                 >
                     pti.
                 </Typography>
@@ -35,8 +35,8 @@ export function NavbarDark() {
                   {/* search input  */}
 
                   <div className="relative">
-                    <input className="w-[30vw] h-10 rounded-lg shadow-sm flex pl-10 placeholder:text-gray-400 outline-none border-none pr-4" type="search" name="search" id="" placeholder="Search Audiobook" />
-                    <IoSearchOutline className="absolute top-2 text-xl text-orange-800 left-2" />
+                    <input className="w-[11rem] md:w-[30vw] h-10 md:h-12 rounded-lg shadow-sm flex pl-8 md:pl-10 placeholder:text-xs md:placeholder:text-gray-400 outline-none border-none pr-4" type="search" name="search" id="" placeholder="Search Audiobook" />
+                    <IoSearchOutline className="absolute top-3 md:top-[0.9rem] md:text-xl text-orange-800 left-2" />
                 </div>
 
                 {/* menu  */}
@@ -45,7 +45,7 @@ export function NavbarDark() {
                     <MenuHandler>
                         <Button
                             variant="text"
-                            className="flex items-center text-base font-semibold gap-10 bg-white capitalize tracking-normal h-10"
+                            className="flex items-center text-base font-semibold gap-10 bg-white capitalize tracking-normal h-10 md:h-12"
                         >
                             MENU{" "}
                             <ChevronDownIcon
@@ -55,7 +55,7 @@ export function NavbarDark() {
                             />
                         </Button>
                     </MenuHandler>
-                    <MenuList className="rounded-lg">
+                    <MenuList className="rounded-lg hover:text-orange-800">
                         <MenuItem className="hover:text-orange-800 text-gray-700">Home</MenuItem>
                         <MenuItem className="hover:text-orange-800 text-gray-700">Details</MenuItem>
                         <MenuItem className="hover:text-orange-800 text-gray-700">Category</MenuItem>
@@ -71,7 +71,7 @@ export function NavbarDark() {
                 
                 {/* avatar  */}
                 
-                <div className="w-8 h-8 bg-orange-700 rounded-[2rem] text-white text-xl flex justify-center items-center cursor-pointer">
+                <div className="w-12 h-12 bg-orange-700 rounded-[2rem] text-white text-2xl hidden md:flex justify-center items-center cursor-pointer">
                 <GoPerson/>
                 </div>
             </div>

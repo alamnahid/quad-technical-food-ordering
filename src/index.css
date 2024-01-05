@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,800;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +11,6 @@
   background-position: top right;
 }
 
-/* bg-gradient-to-t from-[#f99f1c] to-[#f9a01cd0] */
+.sofia{
+  font-family: 'Sofia Sans', sans-serif;
+}

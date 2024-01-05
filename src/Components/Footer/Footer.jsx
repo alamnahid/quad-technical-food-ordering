@@ -16,7 +16,7 @@ const Footer = () => {
 
             <h1 className="mt-20 text-4xl font-bold">pti.</h1>
 
-            <div className="flex items-center gap-[20%]">
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-[20%]">
                 <p className="text-xl font-semibold">Copyright&#169;Tripp.All Right Reserved</p>
                 <div className="flex gap-3">
                     <div className="w-[5rem] h-[5rem] rounded-[5rem] bg-gray-300 flex justify-center items-center text-4xl text-orange-800">
