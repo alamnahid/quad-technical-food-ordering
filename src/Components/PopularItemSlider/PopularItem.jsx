@@ -2,13 +2,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
 import ItemCard from '../ItemCard/ItemCard';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Loading from '../Loading/Loading';
+import { AddNewCard } from '../AddNewCard/AddNewCard';
 
 
 const PopularItem = () => {
@@ -37,7 +36,7 @@ const PopularItem = () => {
 
             <div className='flex justify-between items-center'>
                 <h1 className='text-2xl font-medium'>Popular</h1>
-                <p className='text-orange-700 font-medium text-xl flex justify-center items-center'>AddMore <IoIosArrowBack className='text-gray-500' /> <IoIosArrowForward className='text-gray-800' /></p>
+                <AddNewCard/>
             </div>
 
             <Swiper
