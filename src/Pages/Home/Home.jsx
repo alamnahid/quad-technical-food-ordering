@@ -1,10 +1,12 @@
 import Banner from "../../Components/HomePageBanner/Banner";
+import PopularItem from "../../Components/PopularItemSlider/PopularItem";
 
 
 const Home = () => {
     return (
-        <div>
+        <div className="min-h-screen">
            <Banner></Banner>
+           <PopularItem></PopularItem>
 
             
         </div>

@@ -18,7 +18,7 @@ export function NavbarDark() {
     return (
         <Navbar
             variant="gradient"
-            className="mx-auto min-w-[80vw] px-4 py-3 shadow-none bg-gray-300"
+            className="mx-auto min-w-[80vw] px-4 py-3 shadow-none bg-[#eeeff0] border-none pt-8" 
         >
             <div className="flex flex-wrap items-center justify-between gap-y-4 text-black">
                 <Typography
