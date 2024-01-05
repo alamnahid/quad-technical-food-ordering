@@ -5,11 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.footer{
-  background-image: url(./assets/footer.png), linear-gradient(to top, #f99f1c, #f9a01cd0);
+.footer {
+  background: linear-gradient(to top, #f99f1c, #f9a01cd0);
   background-repeat: no-repeat;
   background-position: top right;
 }
+
+@media (min-width: 768px) {
+  .footer {
+    background-image: url(./assets/footer.png), linear-gradient(to top, #f99f1c, #f9a01cd0);;
+  }
+}
+
 
 .sofia{
   font-family: 'Sofia Sans', sans-serif;

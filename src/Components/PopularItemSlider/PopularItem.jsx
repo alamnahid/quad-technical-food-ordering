@@ -8,6 +8,7 @@ import ItemCard from '../ItemCard/ItemCard';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Loading from '../Loading/Loading';
 
 
 const PopularItem = () => {
@@ -27,10 +28,12 @@ const PopularItem = () => {
         setPopularItems(filteredPopularItems);
     }, [items]);
 
-    console.log(popularItems)
+    if (isLoading) {
+        return <Loading />
+    }
 
     return (
-        <div className='mx-[10%] mt-20'>
+        <div className='mx-[3%] xl:mx-[10%] mt-20'>
 
             <div className='flex justify-between items-center'>
                 <h1 className='text-2xl font-medium'>Popular</h1>
@@ -48,27 +51,25 @@ const PopularItem = () => {
                 autoplay
                 breakpoints={{
                     320: {
-                        slidesPerView: 1, // 1 slide per view on small screens (mobile devices)
+                        slidesPerView: 2.5,
                     },
                     768: {
-                        slidesPerView: 1.5, // 2 slides per view on tablets
+                        slidesPerView: 4,
                     },
                     1024: {
-                        slidesPerView: 5, // 4 slides per view on desktop devices
+                        slidesPerView: 5,
                     },
                 }}
 
             >
                 {
-                    popularItems?.map(item=><SwiperSlide key={item?.Id} className='pb-12'>
-                    <ItemCard item={item} />
-                </SwiperSlide>)
+                    popularItems?.map(item => <SwiperSlide key={item?.Id} className='pb-12'>
+                        <ItemCard item={item} />
+                    </SwiperSlide>)
                 }
 
 
             </Swiper>
-
-
 
         </div>
     );
