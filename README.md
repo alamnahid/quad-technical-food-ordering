@@ -1,4 +1,4 @@
-# Restaurant Website
+### Restaurant Website Live Link: https://quad-technical-food-ordering-pti.vercel.app/
 
 This React-based website is designed to showcase a restaurant's menu, featuring popular and recommended items. The website is fully responsive, ensuring a seamless experience across various devices.
 
@@ -22,7 +22,7 @@ This React-based website is designed to showcase a restaurant's menu, featuring 
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/restaurant-website.git
+   git clone https://github.com/alamnahid/quad-technical-food-ordering.git
    cd restaurant-website
    npm install
    npm run dev
@@ -35,3 +35,9 @@ This React-based website is designed to showcase a restaurant's menu, featuring 
 - **React Hook Form for form handling**
 - **Axios**
 - **React Router**
+
+
+![ss](https://github.com/alamnahid/quad-technical-food-ordering/assets/138557372/3064527c-736d-4b61-80a2-cb46a0e85af8)
+
+![ssss](https://github.com/alamnahid/quad-technical-food-ordering/assets/138557372/3a480a9c-cad6-406b-8d8d-85f8644edffd)
+
